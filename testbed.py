@@ -13,7 +13,9 @@ def main():
     
     print("rel: " + str(ranking.prec(queries[line], thresh)))
     print("recall: " + str(ranking.recall(queries[line], thresh)))
+    print("f1: " + str(ranking.f1_score(queries[line], thresh)))
     print("rr: " + str(ranking.rr(queries[line], thresh)))
+    print("ndcg: " + str(ranking.ndcg(queries[line])))
     
 
 if __name__ == "__main__":
