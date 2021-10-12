@@ -8,7 +8,7 @@ def main():
     queryFile = open(queryFilePath, "r")
     queries = queryFile.readlines()
 
-    line = int(input("line: "))
+    line = int(input("line: ")) - 1
     thresh = int(input("thresh: "))
     
     print("rel: " + str(ranking.prec(queries[line], thresh)))
